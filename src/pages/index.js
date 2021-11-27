@@ -1,10 +1,28 @@
 import React from "react"
 import Layout from "../components/Layout.js"
+import { graphql } from "gatsby";
+import { Helmet } from "react-helmet"
 
-export default function IndexPage() {
+export default function IndexPage({data}) {
+  const {title, description} = data.meta.siteMetadata
   return (
     <Layout>
-      <p>Index Page</p>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{title}</title>
+      </Helmet>
+      <p>Index Page: {description}</p>
     </Layout>
   )
 }
+
+export const meta = graphql`
+    query siteMetadata {
+        meta: site {
+            siteMetadata {
+            title
+            description
+            }
+        }
+    },
+`

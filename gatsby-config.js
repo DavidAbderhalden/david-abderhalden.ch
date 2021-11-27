@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.david-abderhalden.ch",
     title: "David-Abderhalden",
+    description: "very nice",
+    copyright: "This website is copyright 2021 David Abderhalden"
   },
   plugins: [
     "gatsby-plugin-sass", 
@@ -15,7 +17,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/img/favicon.png`,
+        icon: `static/img/favicon.png`,
       },
     }
   ],
