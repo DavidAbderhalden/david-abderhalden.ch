@@ -1,17 +1,10 @@
-import * as React from "react"
-import Header from '../components/atoms/Header.js'
-import { Helmet } from "react-helmet"
+import React from "react"
+import Layout from "../components/Layout.js"
 
-const IndexPage = () => {
+export default function IndexPage() {
   return (
-    <main>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>David-Abderhalden</title>
-      </Helmet>
-      <Header></Header>
-    </main>
+    <Layout>
+      <p>Index Page</p>
+    </Layout>
   )
 }
-
-export default IndexPage
