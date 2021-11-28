@@ -25,7 +25,7 @@ jobs:
       with:
         local-dir: ./public/
         state-name: .htautodeploystate
-        server: sl11066.web.hostpoint.ch
+        server: sl1066.web.hostpoint.ch
         port: 21
         username: git@david-abderhalden.ch
         password: ${{ secrets.FTP_PASSWORD }}
