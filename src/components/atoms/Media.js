@@ -39,10 +39,10 @@ export default function Media() {
     )
     return (
     <div className={styles.container}>
-        <Img fixed={gitHub.childImageSharp.fixed}/>
-        <Img fixed={instagram.childImageSharp.fixed}/>
-        <Img fixed={linkedIn.childImageSharp.fixed}/>
-        <Img fixed={youTube.childImageSharp.fixed}/>
+        <a alt="link to github" href="https://github.com/DavidAbderhalden" target="_blank" rel="noreferrer"><Img fixed={gitHub.childImageSharp.fixed}/></a>
+        <a alt="link to linkedin" href="https://www.linkedin.com/in/davabd/" target="_blank" rel="noreferrer"><Img fixed={linkedIn.childImageSharp.fixed}/></a>
+        <a alt="link to youtube" href="/"><Img fixed={youTube.childImageSharp.fixed}/></a>
+        <a alt="link to instagram" href="https://www.instagram.com/nekroquest/" target="_blank" rel="noreferrer"><Img fixed={instagram.childImageSharp.fixed}/></a>
     </div>
     )
 }
