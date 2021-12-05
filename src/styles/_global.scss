@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
+
+*{
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Overpass', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 8px;     // default 1rem = 8px
+}
+
+//TODO: Remove when mobile styling is done
+.placeholder{
+    display: none;
+}
+
+@media screen and (max-width:50rem) {
+	.layout{
+        display: none;
+    }
+    .placeholder{
+        display: block;
+    }
+}
