@@ -1,5 +1,5 @@
 import React from "react";
-import * as styles from '../../styles/atoms/Banner.module.scss';
+import { container, container__text } from 'styles/atoms/Banner.module.scss';
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
@@ -16,8 +16,8 @@ export default function Banner() {
         }`  
     )
     return (
-        <div className={styles.container}>
-            <div className={styles.container__text}>
+        <div className={container}>
+            <div className={container__text}>
                 <h1 className="heading-1">David Abderhalden</h1>
                 <p className="caption">NekroQuest</p>
             </div>

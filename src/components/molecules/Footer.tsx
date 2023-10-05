@@ -1,9 +1,9 @@
 import React from "react"
-import * as styles from '../../styles/molecules/Footer.module.scss'
+import { container } from 'styles/molecules/Footer.module.scss'
 
 export default function Footer() {
     return (
-        <div className={styles.container}>
+        <div className={container}>
             Footer
         </div>
     )
