@@ -1,5 +1,5 @@
 import React from "react";
-import * as styles from '../../styles/atoms/Media.module.scss';
+import { container } from 'styles/atoms/Media.module.scss';
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
@@ -38,11 +38,11 @@ export default function Media() {
         }`  
     )
     return (
-    <div className={styles.container}>
-        <a alt="link to github" href="https://github.com/DavidAbderhalden" target="_blank" rel="noreferrer"><Img fixed={gitHub.childImageSharp.fixed}/></a>
-        <a alt="link to linkedin" href="https://www.linkedin.com/in/davabd/" target="_blank" rel="noreferrer"><Img fixed={linkedIn.childImageSharp.fixed}/></a>
-        <a alt="link to youtube" href="/"><Img fixed={youTube.childImageSharp.fixed}/></a>
-        <a alt="link to instagram" href="https://www.instagram.com/nekroquest/" target="_blank" rel="noreferrer"><Img fixed={instagram.childImageSharp.fixed}/></a>
+    <div className={container}>
+        <a href="https://github.com/DavidAbderhalden" target="_blank" rel="noreferrer"><Img fixed={gitHub.childImageSharp.fixed}/></a>
+        <a href="https://www.linkedin.com/in/davabd/" target="_blank" rel="noreferrer"><Img fixed={linkedIn.childImageSharp.fixed}/></a>
+        <a href="/"><Img fixed={youTube.childImageSharp.fixed}/></a>
+        <a href="https://www.instagram.com/nekroquest/" target="_blank" rel="noreferrer"><Img fixed={instagram.childImageSharp.fixed}/></a>
     </div>
     )
 }

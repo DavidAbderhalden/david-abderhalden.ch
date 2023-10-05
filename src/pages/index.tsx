@@ -1,9 +1,9 @@
 import React from "react"
-import Layout from "../components/Layout.js"
+import Layout from "components/Layout"
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet"
 
-export default function IndexPage({data}) {
+export default function IndexPage({data}: any) {
   const {title, description} = data.meta.siteMetadata
   return (
     <Layout>
