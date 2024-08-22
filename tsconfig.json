@@ -1,24 +1,17 @@
 {
-    "include": ["src/**/*.tsx", "scripts/**/*.tsx", "typings"],
-    "compilerOptions": {
-      "module": "commonjs",
-      "moduleResolution": "Node",
-      "target": "esnext",
-      "jsx": "react",
-      "lib": ["dom", "esnext"],
-      "strict": true,
-      "noEmit": true,
-      "isolatedModules": true,
-      "esModuleInterop": true,
-      "noUnusedLocals": false,
-      "allowJs": true,
-      "baseUrl": "./src",
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
     },
-    "exclude": ["node_modules", "public", ".cache"],
-    "paths": {
-        "styles": ["styles"],
-        "components": ["components"],
-        "assets": ["assets"],
-        "pages": ["pages"],
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.vitest.json"
     }
+  ],
+  "compilerOptions": {
+    "module": "NodeNext"
   }
+}
