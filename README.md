@@ -1,5 +1,7 @@
+**NOTE: This README us deprecated and needs to be maintained!**
+
 <div align="center">
-  <img src="project-logo.png" height="100px"/>
+  <img src="public/project-logo.png" height="100px"/>
   <h1>Personal Portfolio</h1>
   <p>My personal portfolio website.</p>
   <div>
