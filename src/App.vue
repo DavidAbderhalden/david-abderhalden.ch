@@ -2,5 +2,6 @@
 </script>
 
 <template>
-  <main>david-abderhalden.ch</main>
+  <main>
+  </main>
 </template>

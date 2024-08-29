@@ -1,0 +1,35 @@
+@mixin text($size) {
+  $text-sizes: (
+          tiny: (
+                  font-size: 1.4rem,
+                  font-style: italic,
+                  color: $tertiary-font,
+          ),
+          small: (
+                  font-size: 1.8rem,
+                  color: $secondary-font,
+          ),
+          medium: (
+                  font-size: 2.2rem,
+          ),
+          large: (
+                  font-size: 2.8rem,
+                  font-weight: 600,
+          ),
+          title: (
+                  font-size: 3.8rem,
+                  font-weight: 600,
+          )
+  );
+
+  @if map-has-key($text-sizes, $size) {
+    $styles: map-get($text-sizes, $size);
+
+    color: $primary-font;
+    font-weight: 300;
+
+    @each $key, $value in $styles {
+      #{$key}: $value;
+    }
+  }
+}

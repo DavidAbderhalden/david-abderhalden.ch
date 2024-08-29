@@ -1,1 +1,49 @@
-// TODO: import styles
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Overpass', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 8px;
+}
+
+/** text styles */
+
+h1, h2 {
+  @include text("title");
+}
+
+h3, h4, h5, h6 {
+  @include text("large");
+}
+
+span {
+  @include text("medium");
+}
+
+small {
+  @include text("small");
+}
+
+.text {
+  &--tiny {
+    @include text("tiny");
+  }
+
+  &--small {
+    @include text("small");
+  }
+
+  &--medium {
+    @include text("medium");
+  }
+
+  &--large {
+    @include text("large");
+  }
+
+  &--title {
+    @include text("title");
+  }
+}
