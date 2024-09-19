@@ -1,9 +1,49 @@
-$primary: 0;
-$primary-light: 0;
-$primary-font: #333333;
-$secondary: 0;
-$secondary-light: 0;
-$secondary-font: #666666;
-$tertiary: 0;
-$tertiary-light: 0;
-$tertiary-font: #999999;
+[theme="light-mode"] {
+  --primary: #D55930;
+  --primary-light: #F2C2B2;
+  --primary-font: #333333;
+  --secondary: #696E60;
+  --secondary-light: #F5F4ED;
+  --secondary-font: #666666;
+  --tertiary: #6a8e58;
+  --tertiary-light: #DDE7C5;
+  --tertiary-font: #999999;
+  --link: #3E8AA7;
+  --layer-1: #FFFFFF;
+  --layer-2: #F5F5F5;
+  --layer-3: #EBEBEB;
+  --layer-4: #E0E0E0;
+}
+
+[theme="dark-mode"] {
+  --primary: #D55930;
+  --primary-light: #B98572;
+  --primary-font: #FFFFFF;
+  --secondary: #696E60;
+  --secondary-light: #EDE9D0;
+  --secondary-font: #666666;
+  --tertiary: #6a8e58;
+  --tertiary-light: #9B9851;
+  --tertiary-font: #999999;
+  --link: #3E8AA7;
+  --layer-1: #454545;
+  --layer-2: #313131;
+  --layer-3: #262626;
+  --layer-4: #1f1f1f;
+}
+
+$primary:         var(--primary);
+$primary-light:   var(--primary-light);
+$primary-font:    var(--primary-font);
+$primary-color:   var(--primary-color);
+$secondary:       var(--secondary);
+$secondary-light: var(--secondary-light);
+$secondary-font:  var(--secondary-font);
+$tertiary:        var(--tertiary);
+$tertiary-light:  var(--tertiary-light);
+$tertiary-font:   var(--tertiary-font);
+$link:            var(--link);
+$layer-1:         var(--layer-1);
+$layer-2:         var(--layer-2);
+$layer-3:         var(--layer-3);
+$layer-4:         var(--layer-4);
